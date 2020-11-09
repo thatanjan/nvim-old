@@ -1,0 +1,30 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"css",
+		"markdown",
+		"javascript",
+		"graphql",
+		"html",
+		"yaml",
+		"json",
+		"python",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"vim"
+	],
+	"snippets.extends": {
+		"javascriptreact": ["javascript"],
+		"typescript": ["javascript"]
+	},
+	"snippets.priority": 100,
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 1,
+	"prettier.useTabs": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.tslintIntegration": true
+}
