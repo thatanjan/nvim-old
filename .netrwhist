@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/anjan/git_projects/dev-book/client'
+let g:netrw_dirhist_5='/home/anjan/git_projects/dev-book/client/src'
+let g:netrw_dirhist_4='/home/anjan/blogs/cookies'
+let g:netrw_dirhist_3='/home/anjan/blogs'
+let g:netrw_dirhist_2='/home/anjan/blogs/redirect'
+let g:netrw_dirhist_1='/home/anjan/git_projects/dev-book/client/src'
+let g:netrw_dirhist_0='/home/anjan/youtube video'
+let g:netrw_dirhist_9='/home/anjan/git_projects/dev-book/client/src'
+let g:netrw_dirhist_8='/home/anjan/git_projects/dev-book/client'
+let g:netrw_dirhist_7='/home/anjan/git_projects/portofolio/src'

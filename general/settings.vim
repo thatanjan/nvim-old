@@ -2,11 +2,8 @@
 let g:mapleader = "\<Space>"
 
 set termguicolors     " enable true colors support
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
-
-"airline theme
-" let g:airline_theme='molokai'
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -55,12 +52,20 @@ autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
-" adding flow lsp
-" if executable('flow')
-"     au User lsp_setup call lsp#register_server({
-"         \ 'name': 'flow',
-"         \ 'cmd': {server_info->['flow', 'lsp', '--from', 'vim-lsp']},
-"         \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), '.flowconfig'))},
-"         \ 'whitelist': ['javascript', 'javascript.jsx'],
-"         \ })
-" endif
+" Important!!
+if has('termguicolors')
+set termguicolors
+endif
+
+" For dark version.
+set background=dark
+
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'hard'
+colorscheme gruvbox-material
+
+
+"use decomplete
+let g:deoplete#enable_at_startup = 1

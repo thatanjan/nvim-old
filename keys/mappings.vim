@@ -58,3 +58,23 @@ nnoremap  <Leader>vw :wa <bar> :source $MYVIMRC <CR>
 
 " for quiting a buffer
 nnoremap <Leader>qq :bw <CR>
+
+" Better window resizing
+nnoremap <Leader>l :vertical resize +5 <CR>
+nnoremap <Leader>h :vertical resize -5 <CR>
+nnoremap <Leader>j :resize -5 <CR>
+nnoremap <Leader>k :resize +5 <CR>
+
+
+" Coc explorer
+nmap <space>e :CocCommand explorer<CR>
+
+" undoTree
+nnoremap <F5> :UndotreeToggle<CR>
+
+" Quickly insert an empty new line without entering insert mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
+
+" close all buffer but not quit vim
+nnoremap <Leader>qqq :bufdo bd <CR>

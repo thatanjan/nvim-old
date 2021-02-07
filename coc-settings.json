@@ -2,29 +2,104 @@
 	"coc.preferences.formatOnSaveFiletypes": [
 		"css",
 		"markdown",
-		"javascript",
 		"graphql",
 		"html",
 		"yaml",
 		"json",
 		"python",
+		"javascript",
 		"javascriptreact",
 		"typescript",
-		"typescriptreact",
-		"vim"
+		"typescriptreact"
 	],
 	"snippets.extends": {
 		"javascriptreact": ["javascript"],
 		"typescript": ["javascript"]
 	},
 	"snippets.priority": 100,
-	"python.linting.enabled": true,
-	"python.linting.pylintEnabled": true,
 	"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
 	"prettier.tabWidth": 1,
 	"prettier.useTabs": true,
 	"prettier.jsxSingleQuote": true,
-	"prettier.tslintIntegration": true
+	"tsserver.formatOnType": true,
+	"coc.preferences.formatOnType": true,
+	"typescript.format.enabled": true,
+	"explorer.keyMappings.global": {
+		"i": false,
+
+		"*": "toggleSelection",
+		"<tab>": "actionMenu",
+
+		"gk": ["wait", "expandablePrev"],
+		"gj": ["wait", "expandableNext"],
+		"h": ["wait", "collapse"],
+		"l": ["wait", "expandable?", "expand", "open"],
+		"J": ["wait", "toggleSelection", "normal:j"],
+		"K": ["wait", "toggleSelection", "normal:k"],
+		"gl": ["wait", "expand:recursive"],
+		"gh": ["wait", "collapse:recursive"],
+		"<2-LeftMouse>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
+		"o": ["wait", "expanded?", "collapse", "expand"],
+		"<cr>": ["wait", "expandable?", "cd", "open"],
+		"e": "open",
+		"s": "open:split",
+		"E": "open:vsplit",
+		"t": "open:tab",
+		"<bs>": ["wait", "gotoParent"],
+		"gs": ["wait", "reveal:select"],
+		"il": "preview:labeling",
+		"ic": "preview:content",
+		"Il": "previewOnHover:toggle:labeling",
+		"Ic": "previewOnHover:toggle:content",
+		"II": "previewOnHover:disable",
+
+		"yp": "copyFilepath",
+		"yn": "copyFilename",
+		"yy": "copyFile",
+		"dd": "cutFile",
+		"p": "pasteFile",
+		"df": "delete",
+		"dF": "deleteForever",
+
+		"a": "addFile",
+		"A": "addDirectory",
+		"r": "rename",
+
+		"zh": "toggleHidden",
+		"g.": "toggleHidden",
+		"R": "refresh",
+
+		"?": "help",
+		"q": "quit",
+		"<esc>": "esc",
+		"X": "systemExecute",
+		"gd": "listDrive",
+
+		"f": "search",
+		"F": "searchRecursive",
+
+		"gf": "gotoSource:file",
+		"gb": "gotoSource:buffer",
+
+		"[[": ["wait", "sourcePrev"],
+		"]]": ["wait", "sourceNext"],
+
+		"[i": ["wait", "indentPrev"],
+		"]i": ["wait", "indentNext"],
+
+		"[m": ["wait", "markPrev:modified"],
+		"]m": ["wait", "markNext:modified"],
+
+		"[d": ["wait", "markPrev:diagnosticError:diagnosticWarning"],
+		"]d": ["wait", "markNext:diagnosticError:diagnosticWarning"],
+		"[D": ["wait", "markPrev:diagnosticError"],
+		"]D": ["wait", "markNext:diagnosticError"],
+
+		"[c": ["wait", "markPrev:git"],
+		"]c": ["wait", "markNext:git"],
+		"<<": "gitStage",
+		">>": "gitUnstage"
+	}
 }

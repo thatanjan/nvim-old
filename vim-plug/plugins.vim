@@ -18,7 +18,7 @@ Plug 'jiangmiao/auto-pairs'
 " ayu theme
 Plug 'ayu-theme/ayu-vim'
 " Stable version of coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " vim tabline
 Plug 'vim-airline/vim-airline'
@@ -71,7 +71,39 @@ Plug 'dense-analysis/ale'
 " vim fugitive
 Plug 'tpope/vim-fugitive'
 
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'roxma/nvim-yarp'
+" Plug 'roxma/vim-hug-neovim-rpc'
+
+" javascript lsp  for deoplete
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+" for deoplete tabnine
+" if has('win32') || has('win64')
+"   Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
+" else
+"   Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+" endif
+
+" Plug 'Valloric/YouCompleteMe'
+
 " vim flow
 " Plug 'flowtype/vim-flow'
+"
+Plug 'HerringtonDarkholme/yats.vim'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+Plug 'jparise/vim-graphql'
+
+Plug 'mbbill/undotree'
+
+Plug 'sainnhe/gruvbox-material'
+
+Plug 'frazrepo/vim-rainbow'
+
+Plug 'yardnsm/vim-import-cost', { 'do': 'yarn install' }
 
 call plug#end()

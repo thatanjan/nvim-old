@@ -14,4 +14,6 @@ if !exists('g:vscode')
 	source $HOME/.config/nvim/plug-config/fuzzy.vim
 	source $HOME/.config/nvim/plug-config/emmet.vim
 	source $HOME/.config/nvim/plug-config/ale.vim
+	source $HOME/.config/nvim/plug-config/prettier.vim
+	source $HOME/.config/nvim/plug-config/rainbow.vim
 endif
