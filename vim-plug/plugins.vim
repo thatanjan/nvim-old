@@ -16,7 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 " ayu theme
-Plug 'ayu-theme/ayu-vim'
+" Plug 'ayu-theme/ayu-vim'
 " Stable version of coc
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -48,7 +48,7 @@ Plug 'ap/vim-css-color'
 Plug 'honza/vim-snippets'
 
 " for project management
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 
 "for emmet
 Plug 'mattn/emmet-vim'
@@ -57,13 +57,13 @@ Plug 'mattn/emmet-vim'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 " vim lorem ipsum
-Plug 'vim-scripts/loremipsum'
+" Plug 'vim-scripts/loremipsum'
 
 " vim styled components
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " vim multiple cursor
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " vim ale 
 Plug 'dense-analysis/ale'
@@ -90,7 +90,7 @@ Plug 'tpope/vim-fugitive'
 " vim flow
 " Plug 'flowtype/vim-flow'
 "
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -104,6 +104,13 @@ Plug 'sainnhe/gruvbox-material'
 
 Plug 'frazrepo/vim-rainbow'
 
-Plug 'yardnsm/vim-import-cost', { 'do': 'yarn install' }
+" Plug 'yardnsm/vim-import-cost', { 'do': 'yarn install' }
+
+" Plug 'HendrikPetertje/vimify'
+
+Plug 'alvan/vim-closetag'
+
+Plug 'jxnblk/vim-mdx-js'
 
 call plug#end()
+

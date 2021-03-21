@@ -1,4 +1,3 @@
-if !exists('g:vscode')
 	"plugins
 	source $HOME/.config/nvim/vim-plug/plugins.vim
 	"settings
@@ -16,4 +15,4 @@ if !exists('g:vscode')
 	source $HOME/.config/nvim/plug-config/ale.vim
 	source $HOME/.config/nvim/plug-config/prettier.vim
 	source $HOME/.config/nvim/plug-config/rainbow.vim
-endif
+	source $HOME/.config/nvim/plug-config/closeTage.vim

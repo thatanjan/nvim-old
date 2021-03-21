@@ -78,3 +78,7 @@ nnoremap <Leader>O O<Esc>
 
 " close all buffer but not quit vim
 nnoremap <Leader>qqq :bufdo bd <CR>
+
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
